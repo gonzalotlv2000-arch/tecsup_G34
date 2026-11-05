@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+   <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+</head>
+<body>
+    <main class="container">
+        <h1>formulario + input</h1>
+        <form >
+            <h2> INPUTS </h2>
+
+            <Label for="input1">NOMBRE</Label>
+            <input type="text" id="input1" placeholder="ingrese nombre">
+
+            <label>imput solo lectura 
+                <input readonly value="copiar texto" type="">
+            </label>
+
+            <label>imput desactivado
+                <input disabled value="copiar texto" type="">
+            </label>
+
+            <label>imput solo lectura 
+                <input placeholder="edad" type="number" min="18" max="90">
+            </label>
+
+            <label>imput email
+                <input placeholder="correo" type="email">
+            </label>
+          
+            <label>imput rango
+                <input type="range" min="0" max="100" step="10">
+            </label>            
+
+            <label>imput telefono
+                <input type="tel">
+            </label>  
+
+            <label>imput url
+                <input type="url" placeholder="url">
+            </label>  
+
+            <label>imput password
+                <input type="password">
+            </label>  
+
+            <label>imput color
+                <input type="color">
+            </label>  
+
+            <label>imput busqueda
+                <input type="search">
+            </label>  
+
+            <label>imput un archivo pmg
+                <input type="file" accept=".png">
+            </label>  
+
+            <label>imput multiples archivos
+                <input type="file" accept=".png" multiple>
+            </label> 
+
+            <label>imput 
+                <input type="url" placeholder="url">
+            </label> 
+
+            <input type="hidden" name="datos ocultos">
+
+            <input type="submit" value="guardar">
+
+            <input type="button" value="soy botton">
+
+            <button>hi</button>
+
+        </form>
+
+        <form action="">
+               <h2>imput tipo fecha</h2> 
+               <label>
+                imput tipo fecha y hora
+                <input type="datetime-local">
+               </label>
+
+               <label>
+                imput tipo fecha
+                <input type="date">
+               </label>
+
+               <label>
+                imput tipo hora
+                <input type="time">
+               </label>
+
+               <label>
+                imput tipo semana
+                <input type="week">
+               </label>
+
+               <label>
+                imput tipo mes
+                <input type="month">
+               </label>
+
+               <label>
+                imput tipo fecha y hora
+                <input type="datetime-local">
+               </label>
+
+               <label>
+                imput tipo fecha y hora
+                <input type="datetime-local">
+               </label>
+
+               <label>
+                imput tipo fecha y hora
+                <input type="datetime-local">
+               </label>
+
+               <input type="submit" value="guardar">
+
+        </form>
+
+        <form action="">
+            <h2>Textarea</h2>
+
+            <LAbel>
+                <textarea  rows="10" cols="4" >hola a todos</textarea>
+            </LAbel>
+        </form>
+    
+    </main>
+
+</body>
+</html>

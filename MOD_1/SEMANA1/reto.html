@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página personal</title>
+</head>
+<body>
+    <header>
+        <h1> YAIR SINCHE CARRASCO</h1>
+            <nav>
+                <ul>
+                   <li><a href="#sobre_mi">Sobre mi</a></li>   
+                    <li><a href="#habilidades">Habilidades</a> </li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+
+        <section id="sobre_mi">
+            <h2>Sobre mí</h2>
+             <img src="YO.jpg" alt="Mi viaje a cajamarca" width="400">
+            <p style="text-align: justify;">
+                ¡Hola! Soy Yair, un apasionado del desarrollo web y la tecnología. 
+                Actualmente me encuentro aprendiendo las bases del Frontend para construir 
+                aplicaciones web accesibles, rápidas e interactivas. Me encanta resolver 
+                problemas mediante código y automatizar procesos.
+            </p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Mis Habilidades</h2>
+            <ul>
+                <li>Adaptabilidad y aprendizaje autónomo</li>
+                <li>Atención al detalle</li>
+                <li>Trabajo en equipo</li>
+                <li>Automatización de procesos</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <div>
+                    <label>Nombre*: <br>
+                    <input type="text" name="nombre"  pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="Por favor, ingresa solo letras (no se permiten números)"  required>
+                    </label>
+                </div>
+                <br>
+                <div>
+                    <label>Correo Electrónico *:<br>
+                    <input type="email" name="email" required>
+                    </label>
+                </div>
+                <br>
+                <div>
+                    <label>Mensaje *:<br>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </label>
+                </div>
+                <br>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Yair Sinche. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
