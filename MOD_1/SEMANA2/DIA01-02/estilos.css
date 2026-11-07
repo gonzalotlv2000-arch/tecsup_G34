@@ -1,0 +1,40 @@
+body{
+    background-color: hsl(212, 45%, 89%);
+    font-size: 15px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    padding: 25px;
+    width: 250px;
+    background-color: aliceblue;
+    border-radius: 40px;
+    border:1px solid red;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+
+h1{
+    text-align: center;
+    color: hsl(218, 44%, 22%);
+    font-size: 20px;
+    
+}
+p{
+    text-align: center;
+    color: hsl(216, 15%, 48%);
+    font-size: 15px;
+}
