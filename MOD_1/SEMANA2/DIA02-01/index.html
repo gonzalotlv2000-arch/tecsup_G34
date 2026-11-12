@@ -1,38 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS DOCUMENTO</title>
-    <style>
-                button {
-        background-color: tomato;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Teoria</title>
+  <style>
+    /* Pseudoclases */
 
-        button:hover {
-        background-color: seagreen;
-        cursor: pointer;
-        }
+    button {
+      background-color: tomato;
+    }
 
-        input:focus {
-        outline: 3px solid gold;
-        }
+    button:hover {
+      background-color: seagreen;
+      cursor: pointer;
+    }
 
-        button:disabled {
-        background-color: lightgray;
-        cursor:all-scroll ;
-        }
-        input:checked{
-            outline: 3px solid lightblue;
-        }
-    </style>
+    input:focus {
+      outline: 3px solid gold;
+    }
+
+    button:disabled {
+      background-color: lightgray;
+    }
+
+    input:checked {
+      outline: 2px solid red;
+    }
+
+    /* Pseudoelementos */
+
+    .tip::before {
+      content: "💡 ";
+    }
+
+    .obligatorio::after {
+      content: " *";
+      color: red;
+    }
+
+    input::placeholder {
+      color: blue;
+    }
+
+    ::selection {
+      background-color: gold;
+      color: blue;
+    }
+  </style>
 </head>
 <body>
-    <h1>Pseudoclases</h1>
-    <p>Pasa el cursor por el botón y haz clic en el campo.</p>
-    <input type="text" placeholder="Escribe aquí" />
-    <button>Enviar</button>
-    <button disabled>No disponible</button>
-    <input type="checkbox">Apagado
+  <h1>Pseudoclases</h1>
+
+  <p>Pasa el cursor por el botón y haz clic en el campo.</p>
+  <input type="text" placeholder="Escribe aquí" />
+  <button>Enviar</button>
+  <button disabled>No disponible</button>
+  <input type="checkbox"> Apagado
+
+  <h1>Pseudoelementos</h1>
+
+  <p class="tip">Guarda tus archivos con frecuencia.</p>
+  <p class="obligatorio">Correo</p>
+
+  <input type="text" placeholder="¿Hola, como estas?" />
+
 </body>
 </html>
