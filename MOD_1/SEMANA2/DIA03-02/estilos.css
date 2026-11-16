@@ -20,9 +20,10 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1.5rem 1rem;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark-grayish-blue);
 }
 
-/* Tarjeta principal en dos columnas */
 main {
   background-color: var(--white);
   width: 100%;
@@ -33,7 +34,6 @@ main {
   grid-template-columns: 1fr 1fr;
 }
 
-/* Columna izquierda: Imagen */
 .photo {
   background-image: url('image-product-desktop.jpg');
   background-size: cover;
@@ -48,7 +48,6 @@ main {
   display: block;
 }
 
-/* Columna derecha: Espaciado del contenido */
 .content {
   padding: 2rem;
   display: flex;
@@ -58,17 +57,23 @@ main {
 
 .content h2 {
   margin-bottom: 1.25rem;
+  color:  hsl(228, 12%, 48%);
+  letter-spacing: 10px;
+  font-size: 0.8rem;
 }
 
 .content h1 {
   margin-bottom: 1.5rem;
+  line-height: 1;
+  font-family: 'Fraunces', serif;
 }
 
 .content p {
   margin-bottom: 1.75rem;
+  color: hsl(228, 12%, 48%);
 }
 
-/* Bloque de precios */
+
 .content div {
   display: flex;
   align-items: center;
@@ -76,7 +81,19 @@ main {
   margin-bottom: 1.75rem;
 }
 
-/* Botón */
+.content div span {
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark-cyan);
+}
+
+.content div s {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color:  hsl(228, 12%, 48%);
+}
+
 .content button {
   width: 100%;
   padding: 0.95rem 1.5rem;
@@ -90,31 +107,13 @@ main {
   gap: 0.75rem;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 700;
 }
+
 
 .content button:hover {
   background-color: var(--darker-cyan);
 }
 
-/* Adaptación móvil */
-@media (max-width: 620px) {
-  main {
-    grid-template-columns: 1fr;
-    max-width: 343px;
-  }
-
-  .photo {
-    min-height: 240px;
-  }
-
-  .content {
-    padding: 1.5rem;
-  }
-
-  .content h2,
-  .content h1,
-  .content p,
-  .content div {
-    margin-bottom: 1.25rem;
-  }
-}
